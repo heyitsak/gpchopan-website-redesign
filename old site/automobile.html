@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024">
+    <title>Automobile</title>
+    <style>
+           body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+        /*header*/
+    header{
+      position:sticky;
+      top:0;
+      z-index: 10;
+    }
+    .navbar {
+      height: 100px;
+      background:rgba(255,255,255,.2) ;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 4px 6px rgba(0, 0, 128, 0.1);
+      font-weight: bolder;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      width:30%;
+      height:100px;
+      display: flex;
+      justify-content: space-between;
+      gap:20px;
+      margin-left:20px;
+    }
+    .logo1{
+        width:100px;
+        height:100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo1 img{
+      width: 100px;
+      height: 100px;
+    }
+    .logo2{
+        height: 100px;
+        width:fit-content;
+        font-size:24px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo2 p{
+        margin:0;
+        padding:0;
+    }
+    .nav-items {
+      width:50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 10px;
+    }
+    .nav-items a {
+      color: #000080;
+      text-decoration: none;
+      padding: 12px 16px;
+      transition: 0.3s;
+    }
+     .nav-items a:hover {
+      color: #fff;
+      background-color: #000080;
+      border-radius:4px;
+    }
+    .nav-items .active{
+      color:#fff;
+      background-color: #000080;
+      border-radius: 4px;
+      text-decoration: underline;
+    }
+    
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-btn {
+      color: white;
+      text-decoration: none;
+      padding: 12px 16px;
+      display: block;
+      transition: 0.3s;
+    }
+    .dropdown-btn:hover {
+      background-color: #000080;
+      border-radius: 4px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f9f9f9;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 4px;
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: #000080;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #000080;
+      color:#fff;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    /*main content*/
+    /*about*/
+    h1{
+      color:#000080;
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .row{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .col-1,.col-2{
+      width:45%;
+      border-radius: 4px;
+    }
+    .about p{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: large;
+      text-align:justify;
+      width: 90%;;
+    }
+    /*laboratories*/
+    .col-1 img{
+      width:100%;
+      height: 100%;
+      border-radius:10px;
+      box-shadow: 2px 2px 10px #000080;
+    }
+    /*faculties*/
+    .row-teachers{
+      border: 1px solid black;
+      width:70%;
+      margin:20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .col-3{
+      width:30%;
+      padding: 10px;
+    }
+    .col-4{
+      width:70%;
+      padding: 10px;
+    }
+    .col-3 img{
+      width:100%;
+      height:auto;
+      border-radius: 10px;
+    }
+    table{
+      width:100%;
+      border-collapse: collapse;
+    }
+     /*footer*/
+    .foot{
+  background-color:#000080;
+  color:#fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+  padding: 5px;
+    }
+    .foot h3{
+  margin:0;
+  text-align: center;
+    }
+    p{
+      text-align: justify;
+    }
+    </style>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+        <div class="logo1"><img src="1.png" alt=""></div>
+        <div class="logo2">
+            <p style="color:#000080">GOVT. POLYTECHNIC</p>
+            <p STYLE="font-size:16px;">CHOPAN, SONBHADRA</p>
+        </div>
+    </div>
+    <div class="nav-items">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+
+      <!-- Dropdown -->
+      <div class="dropdown">
+        <a href="#" class="dropdown-btn active">Departments ▾</a>
+        <div class="dropdown-content">
+          <a href="computerScience.html">Computer Science</a>
+          <a href="electronics.html">Electronics</a>
+          <a href="automobile.html">Automobile</a>
+          <a href="appliedSciencesAndHumanities.html">Applied Sciences & Humanities</a>
+        </div>
+      </div>
+
+       <!-- Dropdown -->
+      <div class="dropdown">
+        <a href="#" class="dropdown-btn">Facilities▾</a>
+        <div class="dropdown-content">
+          <a href="library.html">Library</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="hostels.html">Hostels</a>
+        </div>
+      </div>
+      
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+<main>
+    <h1>MECHANICAL AUTOMOBILE</h1>
+    <section class="about">
+      <div class="row">
+          <p>The Automobile Engineering branch at Government Polytechnic Chopan is dedicated to preparing skilled professionals for the dynamic and fast-growing automotive sector. The program integrates mechanical engineering principles with modern automobile technologies, equipping students with the knowledge and expertise required to design, develop, manufacture, and maintain vehicles.
+
+The curriculum emphasizes both theoretical concepts and practical applications, covering areas such as:
+
+Automobile Engines and Power Systems
+
+Vehicle Dynamics and Chassis Design
+
+Automotive Electrical and Electronic Systems
+
+Manufacturing Processes and Workshop Technology
+
+Thermodynamics and Fluid Mechanics
+
+Automobile Maintenance and Service Technology
+
+Emerging Technologies in Electric Vehicles (EVs), Hybrid Systems, and Sustainable Mobility
+
+Students are trained through state-of-the-art laboratories, hands-on workshops, and industrial visits, ensuring exposure to real-world automotive environments. Project work and internships further enhance their ability to tackle practical challenges in vehicle design, maintenance, and innovation.
+
+The branch also fosters creativity, problem-solving, and teamwork, encouraging students to engage in technical competitions, design projects, and research initiatives.
+
+Students of the Automobile Engineering program can pursue careers in automobile manufacturing industries, service and maintenance sectors, research and development, transport corporations, and allied industries, or opt for higher studies to expand their expertise.
+
+By combining core engineering knowledge with modern automotive technologies, the Automobile Engineering branch at Government Polytechnic Chopan enables students to contribute meaningfully to the future of mobility and sustainable transportation.
+</p>
+      </div>
+    </section> 
+    <hr style="width:90%;">
+    <h1>LABORATORIES</h1>
+    <section class="labs">
+    <div class="row">
+      <div class="col-1">
+        <img src="auto-lab1.jpg" alt="">
+      </div>
+      <div class="col-2">
+       <p>The Thermal Engineering Laboratory and Hydraulics Laboratory provide students with essential practical knowledge in energy systems and fluid mechanics. In the Thermal Lab, students conduct experiments on heat exchangers, boilers, compressors, and IC engine test rigs to understand thermodynamics, heat transfer, and energy conversion processes. The Hydraulics Lab, equipped with pumps, turbines, and hydraulic trainers, allows students to study fluid properties, pressure, flow, and velocity, along with the practical applications of hydraulic power in machines and automobiles.
+       </p>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-2">
+        <p>The Mechanics Laboratory strengthens the foundation of engineering mechanics by offering experiments on forces, moments, friction, simple machines, and material properties like tensile strength and hardness. Through these hands-on activities, students develop a clear understanding of structural stability, motion, and strength of components, which is crucial for designing, analyzing, and maintaining automobile parts and systems.
+        </p>
+      </div>
+      <div class="col-1">
+        <img src="auto-lab2.jpg" alt="">
+      </div>
+     </div>
+    </section>
+    <hr style="width:90%;">
+   <h1>FACULTY</h1>
+    <hr style="width:90%;">
+    <div class="row-teachers">
+      <div class="col-3">
+        <img src="Abhishek kumar Vishwakarma.jpeg" alt="teacher">
+      </div>
+      <div class="col-4">
+        <table border="1">
+          <tr>
+            <th>Name</th>
+            <th>Mr. Abhishek Kumar Vishwakarma</th>
+          </tr>
+          <tr>
+            <th>Designation</th>
+            <th>Officiating HOD, Lecturer</th>
+          </tr>
+          <tr>
+            <th>Qualifications</th>
+            <th>B.Tech, M.Tech</th>
+          </tr>
+          <tr>
+            <th>Department</th>
+            <th>Mechanical Automobile</th>
+          </tr>
+          <tr>
+            <th>Area Of Specialization</th>
+            <th>Product Design Development</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <hr style="width:90%;">
+     <div class="row-teachers">
+      <div class="col-3">
+        <img src="Ankur Verma.jpeg" alt="teacher">
+      </div>
+      <div class="col-4">
+        <table border="1">
+          <tr>
+            <th>Name</th>
+            <th>Mr. Ankur Verma</th>
+          </tr>
+          <tr>
+            <th>Designation</th>
+            <th>Lecturer</th>
+          </tr>
+          <tr>
+            <th>Qualifications</th>
+            <th>M.Tech</th>
+          </tr>
+          <tr>
+            <th>Department</th>
+            <th>Mechanical Automobile</th>
+          </tr>
+          <tr>
+            <th>Area Of Specialization</th>
+            <th>Mechanical Engineering</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <hr style="width:90%;">
+     <div class="row-teachers">
+      <div class="col-3">
+        <img src="laxmi shankar yadav.jpeg" alt="teacher">
+      </div>
+      <div class="col-4">
+        <table border="1">
+          <tr>
+            <th>Name</th>
+            <th>Mr. Laxmi Shankar Yadav</th>
+          </tr>
+          <tr>
+            <th>Designation</th>
+            <th>Lecturer</th>
+          </tr>
+          <tr>
+            <th>Qualifications</th>
+            <th>B.Tech</th>
+          </tr>
+          <tr>
+            <th>Department</th>
+            <th>Mechanical Automobile</th>
+          </tr>
+          <tr>
+            <th>Area Of Specialization</th>
+            <th>Mechanical Engineering</th>
+          </tr> 
+        </table>
+      </div>
+    </div>
+    <hr style="width:90%;">
+     <div class="row-teachers">
+      <div class="col-3">
+        <img src="Vaibhav Kumar Yadav.jpeg" alt="teacher">
+      </div>
+      <div class="col-4">
+        <table border="1">
+          <tr>
+            <th>Name</th>
+            <th>Mr. Vaibhav Kumar Yadav</th>
+          </tr>
+          <tr>
+            <th>Designation</th>
+            <th>Lecturer</th>
+          </tr>
+          <tr>
+            <th>Qualifications</th>
+            <th>B.Tech, M.Tech</th>
+          </tr>
+          <tr>
+            <th>Department</th>
+            <th>Mechanical Automobile</th>
+          </tr>
+          <tr>
+            <th>Area Of Specialization</th>
+            <th>Material Science</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="row-teachers">
+      <div class="col-3">
+        <img src="Pradeep kumar patel.jpeg" alt="teacher">
+      </div>
+      <div class="col-4">
+        <table border="1">
+          <tr>
+            <th>Name</th>
+            <th>Mr. Pradeep Kumar Patel</th>
+          </tr>
+          <tr>
+            <th>Designation</th>
+            <th>Lecturer</th>
+          </tr>
+          <tr>
+            <th>Qualifications</th>
+            <th>B.Tech</th>
+          </tr>
+          <tr>
+            <th>Department</th>
+            <th>Mechanical Engineering</th>
+          </tr>
+          <tr>
+            <th>Area Of Specialization</th>
+            <th>Mechanical Engineering</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="row-teachers">
+      <div class="col-3">
+        <img src="sateesh kumar.jpeg" alt="teacher">
+      </div>
+      <div class="col-4">
+        <table border="1">
+          <tr>
+            <th>Name</th>
+            <th>Mr. Sateesh Kumar </th>
+          </tr>
+          <tr>
+            <th>Designation</th>
+            <th>Lecturer</th>
+          </tr>
+          <tr>
+            <th>Qualifications</th>
+            <th>B.Tech</th>
+          </tr>
+          <tr>
+            <th>Department</th>
+            <th>Mechanical Engineering</th>
+          </tr>
+          <tr>
+            <th>Area Of Specialization</th>
+            <th>Mechanical Engineering</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+</main>
+<footer class="foot">
+  <h3>&copy;2025 ALL RIGHTS RESERVED GOVT. POLYTECHNIC CHOPAN,SONBHADRA</h3>
+  <h4><a href="developers.html" style="color:white;">Maintainer & Developers</a></h4>
+</footer>
+</body>
+</html>

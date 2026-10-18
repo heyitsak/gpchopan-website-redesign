@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024">
+    <title>Automobile</title>
+    <style>
+           body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+        /*header*/
+    header{
+      position:sticky;
+      top:0;
+      z-index: 10;
+    }
+    .navbar {
+      height: 100px;
+      background:rgba(255,255,255,.2) ;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 4px 6px rgba(0, 0, 128, 0.1);
+      font-weight: bolder;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      width:30%;
+      height:100px;
+      display: flex;
+      justify-content: space-between;
+      gap:20px;
+      margin-left:20px;
+    }
+    .logo1{
+        width:100px;
+        height:100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo1 img{
+      width: 100px;
+      height: 100px;
+    }
+    .logo2{
+        height: 100px;
+        width:fit-content;
+        font-size:24px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo2 p{
+        margin:0;
+        padding:0;
+    }
+    .nav-items {
+      width:50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 10px;
+    }
+    .nav-items a {
+      color: #000080;
+      text-decoration: none;
+      padding: 12px 16px;
+      transition: 0.3s;
+    }
+     .nav-items a:hover {
+      color: #fff;
+      background-color: #000080;
+      border-radius:4px;
+    }
+    .nav-items .active{
+      color:#fff;
+      background-color: #000080;
+      border-radius: 4px;
+      text-decoration: underline;
+    }
+    
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-btn {
+      color: white;
+      text-decoration: none;
+      padding: 12px 16px;
+      display: block;
+      transition: 0.3s;
+    }
+    .dropdown-btn:hover {
+      background-color: #000080;
+      border-radius: 4px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f9f9f9;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 4px;
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: #000080;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #000080;
+      color:#fff;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    /*main content*/
+    h1{
+      color:#000080;
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h4{
+       text-align: center;
+    }
+    iframe{
+      width:100px;
+      height:100px;
+      display: flex;
+      justify-self:center;
+    }
+     /*footer*/
+    .foot{
+  background-color:#000080;
+  color:#fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+  padding: 5px;
+    }
+    .foot h3{
+  margin:0;
+  text-align: center;
+    }
+    </style>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+        <div class="logo1"><img src="1.png" alt=""></div>
+        <div class="logo2">
+            <p style="color:#000080">GOVT. POLYTECHNIC</p>
+            <p STYLE="font-size:16px;">CHOPAN, SONBHADRA</p>
+        </div>
+    </div>
+    <div class="nav-items">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+
+      <!-- Dropdown -->
+      <div class="dropdown">
+        <a href="#" class="dropdown-btn active">Departments ▾</a>
+        <div class="dropdown-content">
+          <a href="computerScience.html">Computer Science</a>
+          <a href="electronics.html">Electronics</a>
+          <a href="automobile.html">Automobile</a>
+          <a href="appliedSciencesAndHumanities.html">Applied Sciences & Humanities</a>
+        </div>
+      </div>
+
+       <!-- Dropdown -->
+      <div class="dropdown">
+        <a href="#" class="dropdown-btn">Facilities▾</a>
+        <div class="dropdown-content">
+          <a href="library.html">Library</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="hostels.html">Hostels</a>
+        </div>
+      </div>
+      
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </nav>
+</header>
+<main>
+    <h1>CONTACT</h1>
+    <h4>Government Polytechnic Chopan,Sonbhadra
+    </h4>
+    <h4><a href="mailto:gpchopansonbhadra@gmail.com">Email: gpchopansonbhadra@gmail.com</a>
+    </h4>
+    <h4>Phone no.- 9451769783</h4>
+    <h4>Near Toll Plaza, Lodhi, Robertsganj, Sonbhadra, U.p, India, Pin-231216
+    </h4>
+    <h4>Map-</h4>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7253.4897947936715!2d83.04829386828997!3d24.632475794343616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398efa3bf4986b85%3A0xaae0fa498bd4e553!2sGovernment%20Polytechnic%20Sonbhadra!5e0!3m2!1sen!2sin!4v1758697408165!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</main>
+<footer class="foot">
+  <h3>&copy;2025 ALL RIGHTS RESERVED GOVT. POLYTECHNIC CHOPAN,SONBHADRA</h3>
+  <h4><a href="developers.html" style="color:white;">Maintainer & Developers</a></h4>
+</footer>
+</body>
+</html>
